@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2? family = Poppins & display = swap'); 
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.header-container{
+    background-image: url('/images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color:hsl(193, 100%, 96%);
+    width: 100vw;
+    height: 115vh;
+}
+.l-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position:absolute;
+    margin-top: 2rem;
+    width: 100%;
+    height: .18rem;
+}
+.logo{
+    width:9rem;
+    left:0;
+    margin: 1rem;
+}
+.button{
+    right:0;
+    margin:1rem;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2rem;
+    width: 100px;
+    padding:.5rem;
+    font-weight:600 ;
+    font-size: .85rem;
+    transition: 1s;
+}
+.button:hover{
+    background-color: hsl(322, 100%, 66%);
+    color: #ffffff;
+    transform: scale(1.2);
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:9rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: #02070af1;
+}
+.start-free{
+    width: 15rem;
+    padding: .75rem 1rem;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 2rem;
+    text-decoration: none;
+    margin:2rem ;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 2s;
+}
+.start-free:hover{
+    background-color: #d5dfee;
+    color: #000000;
+    transform: scale(1.1);
+}
+.mockups img{
+    width: 18rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+.features-community{
+    width: 20rem;
+    height: 30rem;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.features-community-text{
+    text-align: center;
+    width: 80%;
+}
+.community-img img{
+    width: 15rem;
+    margin-top: 2rem;
+}
+.features-community h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: -.5rem;
+}
+p{
+    color: #615b5bcc;
+}
+.build-community{
+    width: 90%;
+    height: 10rem;
+    border-radius: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 20px #20313b7a;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transform: translateY(40%);
+}
+.build-community span{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.build-community a {
+    width: 15rem;
+    padding: .75rem 1rem;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 2rem;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ffffff;
+    box-shadow: 0 4px 25px #66879b;
+    transition: 2s;
+}
+.build-community a:hover{
+    background-color: hsl(0, 0%, 99%);
+    color: #000000;
+    transform: scale(1.1);
+
+}
+footer{
+    background-color: hsl(192, 100%, 9%);
+    display: inline-block;
+    text-decoration: none;
+    font-family:"Open Sans";
+    width: 100%;
+    cursor: pointer;
+}
+.footer-logo{
+    width: 10rem;
+    padding:2rem;
+    margin-left: -.95rem;
+    margin-top: 5rem;
+}
+.contact-container{
+    display: block;
+    align-items:flex-start;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.contact span{
+    display: block;
+    padding: .75rem;
+    width: 50%;
+    margin-left: 2rem;
+    margin-top: -2.5rem;
+    color: #ffffff;
+}
+ul{
+    list-style: none;
+}
+ a{
+    text-decoration: none;
+    color: #ffffff;
+}
+li{
+    margin-top: 1rem;
+}
+footer p {
+    font-size: 1rem;
+    text-align: center;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media-icon{
+    padding: 1rem;
+    width: 2.5rem;
+    transition: 2s;
+}
+.social-media-icon:hover{
+    transform: rotateY(360deg);
+}
+@media (min-width:1024px){
+    .header-container{
+       background-image: url('/images/bg-hero-desktop.svg');
+       height: 90vh;
+       display: flex;
+       align-items: center;
+       justify-content:space-evenly;
+       flex-direction: row;
+    }
+    .features{
+        height: auto;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        margin-top:4rem;
+        margin-left: 3rem;
+        font-size: 20px;
+    }
+    .features p{
+        text-align: start;
+        color: #000000c4;
+        font-size: 18px;
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+    }
+    .mockups{
+        width: 550px;
+        margin-right:120px;
+        margin-top: 3rem;
+
+    }
+    .mockups img {
+        width:600px;
+    }
+    .features-community{
+       width: 80%;
+       height:60vh;
+       display: flex;
+       align-items: center;
+       justify-content:space-evenly;
+       flex-direction: row-reverse;
+    }
+    .features-community-text {
+        width: 50%;
+        text-align: start;
+    }
+    .community-img img{
+        width: 20rem;
+        margin: 2rem;
+        transition: 1s;
+    }
+    .community-img img:hover{
+        transform: scale(1.1);
+    }
+    .reverse{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .build-community{
+        width: 40%;
+    }
+    .footer-coll{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem;
+        padding: 1rem;
+        font-size: 16px;
+    }
+    .footer-logo{
+        width: 8rem;
+        margin-bottom: -2rem
+    }
+    .contact{
+        width: 50%;
+    }
+    .contact-container span {
+        padding: 1.2rem;
+    }
+    .contact-container span:hover{
+        color: #000000;
+        font-size: 20px;
+    }
+    .help-list{
+        margin-left:-15rem;
+        margin-top: 3rem;
+        line-height: 2rem;
+    }
+    .social-list{
+        margin-right: 15rem;
+        margin-top: 3rem;
+        margin-right: 5rem;
+        line-height: 2rem;
+    }
+    .list-item:hover{
+        color: #000000;
+        font-size: 20px;
+    }
+    
+}
